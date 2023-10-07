@@ -1,0 +1,36 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sheet&Sequence_32",
+        "sheet&Sequence_31",
+        "ExtractDataTable&Sequence_25",
+        "str_kisi&Sequence_11",
+        "str_sitedekiKisiSayisi&Sequence_17",
+        "str_uzunTarih&Sequence_11",
+        "str_secilecekGun&Sequence_11",
+        "sr_secilecekTarih&Sequence_11",
+        "str_kisiSayisi&Sequence_11",
+        "str_tarih&Sequence_11",
+        "str_varıs&Sequence_11",
+        "str_kalkis&Sequence_11",
+        "dtm_DosyaTarihi&Sequence_1",
+        "dt_ucusBilgileri&Sequence_1",
+        "str_ucusExceliYolu&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

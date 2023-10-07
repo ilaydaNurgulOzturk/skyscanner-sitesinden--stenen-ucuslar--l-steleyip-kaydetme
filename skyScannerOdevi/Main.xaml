@@ -1,0 +1,1053 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1248,16164" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="skyScanner " sap:VirtualizedContainerService.HintSize="1258.4,16099.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_ucusExceliYolu" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_ucusBilgileri" />
+      <Variable x:TypeArguments="s:DateTime" Name="dtm_DosyaTarihi" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1196,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;islem baslatildi&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="1196,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[str_ucusExceliYolu]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">C:\Users\Ogulcan\Desktop\uiPath\skyscanner.xlsx</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Sequence DisplayName="hazırlık" sap:VirtualizedContainerService.HintSize="1196,968" sap2010:WorkflowViewState.IdRef="Sequence_14">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;hazırlık&quot;]" />
+      <ui:KillProcess AppliesTo="{x:Null}" Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="387.2,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chorome" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;chorome kill edildi&quot;]" />
+      <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="387.2,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="excel" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;excel kill edildi&quot;]" />
+    </Sequence>
+    <Sequence DisplayName="ucus bilgileri excel" sap:VirtualizedContainerService.HintSize="1196,3227.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="635.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;ucus bilgileri alinacak&quot;]" />
+      <Assign sap:VirtualizedContainerService.HintSize="635.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:DateTime">[dtm_DosyaTarihi]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:DateTime">[System.IO.File.GetLastWriteTime("C:\Users\Ogulcan\Desktop\uiPath\skyscanner.xlsx")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:IfElseIf DisplayName="dosya olusturma son 24 saat icinde mi" sap:VirtualizedContainerService.HintSize="635.2,871.2" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+        <ui:IfElseIf.ConditionBlocks>
+          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+            <ui:IfElseIfBlock BlockType="If" Condition="[Now.AddDays(-1)&lt;=dtm_DosyaTarihi]">
+              <ui:IfElseIfBlock.Then>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,254.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;dosya bilgileri guncel devam edilecek&quot;]" />
+                </Sequence>
+              </ui:IfElseIfBlock.Then>
+            </ui:IfElseIfBlock>
+            <ui:IfElseIfBlock BlockType="Else">
+              <ui:IfElseIfBlock.Then>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,384.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;dosya bilgileri guncel degil&quot;]" />
+                  <Throw Exception="[new BusinessRuleException(&quot;surec guncel degil &quot;)]" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Throw_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Throw>
+                </Sequence>
+              </ui:IfElseIfBlock.Then>
+            </ui:IfElseIfBlock>
+          </sc:BindingList>
+        </ui:IfElseIf.ConditionBlocks>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:IfElseIf>
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="635.2,1119.2" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+        <ueab:ExcelProcessScopeX.Body>
+          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,992.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="539.2,880.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\Ogulcan\Desktop\uiPath\skyscanner.xlsx">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="505.6,611.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'düğme  Kapat'" sap:VirtualizedContainerService.HintSize="443.2,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7bedbe54-9629-4b5b-ad4f-92d7adfa74f6" InformativeScreenshot="ada8fb763fd065df797f6a32b17bff12" Selector="&lt;wnd app='excel.exe' cls='NUIDialog' title='*' /&gt;&lt;uia automationid='Close' name='Kapat' role='d??me' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="443.2,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sayfa1&quot;)]" SaveTo="[dt_ucusBilgileri]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="443.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;excel ucus bilgileri okundu&quot;]" />
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+              </ueab:ExcelApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelProcessScopeX.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ueab:ExcelProcessScopeX>
+      <ui:IfElseIf DisplayName="isleme alinabilecek veri var mi" sap:VirtualizedContainerService.HintSize="635.2,740.8" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+        <ui:IfElseIf.ConditionBlocks>
+          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+            <ui:IfElseIfBlock BlockType="If" Condition="[dt_ucusBilgileri.RowCount.Equals(0)]">
+              <ui:IfElseIfBlock.Then>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,254.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;satir bulunmadigi icin islemi yapamiyoruz&quot;]" />
+                </Sequence>
+              </ui:IfElseIfBlock.Then>
+            </ui:IfElseIfBlock>
+            <ui:IfElseIfBlock BlockType="Else">
+              <ui:IfElseIfBlock.Then>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,254.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;bu dosyada&quot;+dt_ucusBilgileri.ToString+&quot;satir bulunmaktadir.&quot;]" />
+                </Sequence>
+              </ui:IfElseIfBlock.Then>
+            </ui:IfElseIfBlock>
+          </sc:BindingList>
+        </ui:IfElseIf.ConditionBlocks>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:IfElseIf>
+    </Sequence>
+    <Sequence DisplayName="excel satırlerı döngüsü" sap:VirtualizedContainerService.HintSize="1196,11315.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1133.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;excel satirlari akisi basladi&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: En Ucuz Uçak Biletleri ve Rezervasyon Teklifleri | Skyscanner" sap:VirtualizedContainerService.HintSize="1133.6,11020.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1100,10804" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NCheckState DisplayName="Check App State 'Ara'" sap:VirtualizedContainerService.HintSize="1037.6,608" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,259.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;site açıldı&quot;]" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,389.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_14" Message="[&quot;site yüklenemedi&quot;]" />
+                    <Throw Exception="[new BusinessRuleException(&quot;site yüklenemedi&quot;)]" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvElementArea="1396, 651, 90, 52" CvTextArea="1412, 669, 28, 14" CvTextArgument="Ara" CvType="Button" DesignTimeRectangle="1398, 653, 86, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Ara'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Ara ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Ara ' class='BpkButtonBase_bpk-button__YjgwZ BpkButtonBase_bpk-button--large__MGFjO BpkButtonFeatured_bpk-button--featured__MTBkM App_submit-button__NGFhZ App_submit-button-oneline__MmU3N' check:text='Ara' /&gt;" Guid="a6fccedb-d039-4f7e-9b3b-827e8971602b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAA0CAYAAAAKVi8oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVHhe7ZsxTgMxEEUTBPfIDbhAelpKWnIIrsMpqGmoOAEdSBQUtBRIFCY/wtFkdszCrv0XtP9LT8p6xlu8WJaL9eJktU6iPRJNoij6+HSTjs6u0/LiPi0un9Ji8ywitm7gCK7gLHIJQtGYFL5U9AJ3kdOO6OX5TfgC8XPg0Hs9EK2VXA+/sveisb9EE8Rw7J69F63VXB+7qveid6eLoFkMB047onWEa8DWaVd01ChGI9EkJJqERJOQaBISTUKiSUg0iVmKvn14T4+vH2l19RLWWzBb0QhTdnPROVFtKiAXkhGWbJpoJKpPBVt2U9E+Uc+UMGVTROffpbpPqW7n1oIlu5nonNKzHfPpq9WGIftPiLZj39Vy7FiJfLIYEsiO3jmG5qKj+B47z1JK1Ou5vnv76v598CdF7xxDE9F98X12rq9FifrHgK3Cnq2jnrE0Fd03nmN7bC0aQ/z4GBiSAVW0r+X4HluLEvUPgSUZVBedE9VAjv8dYWOffd8QmJJBddH/AbZkMEvRbMlglqJx9GNKBrMUPQUSTUKiSUg0CYkmIdEkJJqERJPoitaH6PWJPkTX1Yr6hFcrdFmoPuFlIV1/q094/Q1oVdfDrmZwIBroivJ4eq8oZ7Syh+NXciYUDbC/YNLuNKKjX5mtGziCK7sne4qiRV0kmsI6fQK47Ih172bttwAAAABJRU5ErkJggg==" InformativeScreenshot="5e57e2e5d354a2474f0982e5502e0160.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='En Ucuz Uçak Biletleri ve Rezervasyon Teklifleri | Skyscanner' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_ucusBilgileri]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1037.6,10040.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1004,9852.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="operasyonlar" sap:VirtualizedContainerService.HintSize="960.8,9763.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="str_kalkis" />
+                          <Variable x:TypeArguments="x:String" Name="str_varıs" />
+                          <Variable x:TypeArguments="x:String" Name="str_tarih" />
+                          <Variable x:TypeArguments="x:String" Name="str_kisiSayisi" />
+                          <Variable x:TypeArguments="x:String" Name="sr_secilecekTarih" />
+                          <Variable x:TypeArguments="x:String" Name="str_secilecekGun" />
+                          <Variable x:TypeArguments="x:String" Name="str_uzunTarih" />
+                          <Variable x:TypeArguments="x:String" Name="str_kisi" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Sequence DisplayName="değişkenlerin atanması " sap:VirtualizedContainerService.HintSize="898.4,976.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="433.6,194.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                            <ui:MultipleAssign.AssignOperations>
+                              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_kalkis]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[CurrentRow.Item("KALKIŞ").ToString]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_varıs]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[CurrentRow.Item("VARIŞ").ToString]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_tarih]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[CurrentRow.Item("TARİH").ToString]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_kisiSayisi]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[CurrentRow.Item("KİŞİ SAYISI").ToString]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                              </scg:List>
+                            </ui:MultipleAssign.AssignOperations>
+                          </ui:MultipleAssign>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[sr_secilecekTarih]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[Convert.ToDateTime(str_tarih).ToString(("MMMM yyyy"),System.Globalization.CultureInfo.GetCultureInfo("TR"))]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_secilecekGun]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[Convert.ToDateTime(str_tarih).ToString(("dd"),System.Globalization.CultureInfo.GetCultureInfo("TR"))]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_uzunTarih]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[Convert.ToDateTime(str_tarih).ToString(("dd MMMM yyyy dddd"),System.Globalization.CultureInfo.GetCultureInfo("TR"))]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_kisi]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(str_kisiSayisi,"\d+").Value]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[str_kalkis + str_kisiSayisi +str_tarih + str_varıs + &quot;Str_kisi:&quot;+str_kisi]" />
+                        </Sequence>
+                        <Sequence DisplayName="bilgilerin girilmesi" sap:VirtualizedContainerService.HintSize="898.4,6096" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="str_sitedekiKisiSayisi" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Tekyon'" sap:VirtualizedContainerService.HintSize="684,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvType="RadioButton" DesignTimeRectangle="567, 535, 24, 23" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'Tekyon'" Guid="fcf69dbd-997d-494d-b510-c08daac70ced" ImageBase64="" InformativeScreenshot="2ad29a5c81b1b8ff396a5c13e4fec143.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='En Ucuz Uçak Biletleri ve Rezervasyon Teklifleri | Skyscanner' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArgument="Tekyon" CvType="Text" DesignTimeRectangle="595, 539, 54, 17" ElementType="Text" FriendlyName="'Tekyon'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Yalnızca aktarmasız'" sap:VirtualizedContainerService.HintSize="684,157.6" sap2010:WorkflowViewState.IdRef="NCheck_3" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                            <uix:NCheck.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" DesignTimeRectangle="436, 671, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl aria-label='Yalnızca aktarmasız uçuşlar' tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Yalnızca aktarmasız uçuşlar' tag='INPUT' type='checkbox' class='BpkCheckbox_bpk-checkbox__input__YTZlN BpkCheckbox_bpk-checkbox__input-white__ZGRmZ' aaname='' /&gt;" Guid="11c6174c-5377-462c-b35a-26fdca4ff614" ImageBase64="" InformativeScreenshot="6366adef41da15b1085e32df1b73e100.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='En Ucuz Uçak Biletleri ve Rezervasyon Teklifleri | Skyscanner' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArgument="Yalnizca aktarmasiz ucuslar" CvType="Text" DesignTimeRectangle="464, 675, 148, 14" ElementType="Text" FriendlyName="'Yalnızca aktarmasız'" FullSelectorArgument="&lt;webctrl aaname='Yalnızca aktarmasız uçuşlar' parentid='flights-search-controls-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yalnızca aktarmasız uçuşlar' parentid='flights-search-controls-root' tag='SPAN' type='' class='BpkCheckbox_bpk-checkbox__label__MDIxZ BpkCheckbox_bpk-checkbox__label--small__ODE4M' check:innerText='Yalnızca aktarmasız uçuşlar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJgAAAASCAYAAACn6RefAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGmSURBVGhD7ZZbagNRDEP70310Idn/tlL8oXKq2L7z4EIIFgjr4YRhMCFf3z+P53C4i3Ngw62cAxtu5RzYcCvnwIZb+XdgARZVJnbdu7B6xiof5rzzvv79gvGLBPZk170Lq2es8mHOO++rPTBNotollJ/dE6o8wG614zpD1Xd5hyvfp3y1Q3qeecHzyjvO7hDKX/6DEfLsVnrVKQvQe7/SJPNMa3peZZXOMmp6zSuaWcBzdZWnvtrd0WR5YO4J5dyRXnWeUWfMcHSH8H16ZY5uN9P0GZjzM8qPZKJ38poVvacX2CundvgO+XJgQS5T02u6PtNl3um9+yyT9+l9l8lrZp1rek3P6QNdT+/0Xl6zovfulQXoM02v6WwPTGAe4I7rrqMmPZcXmAfkVzuanZYPZF6TZEYtL2RZgPlKV+SOkHXuXQdcZ3vVToA7zkO/YAI7TddVl0E73ne55pEdTe5RB9wHuKtJMqOmJ6o80H1O0A5JyHd9lWt6F2Ce7bDTdKYHNvwMCllXUci6K5wD+1ASWV9RyLornAMbbuUc2HAr58CGG/l4/gK21IgvPYLemQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NCheck.Target>
+                          </uix:NCheck>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;button seçme işlemleri bitti&quot;]" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Kalkış'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="684,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Text="[str_kalkis + &quot;[k(Enter)]&quot;]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvElementArea="438, 581, 280, 48" CvTextArea="451, 597, 84, 17" CvTextArgument="Turkiye (TR)" CvType="InputBox" DesignTimeRectangle="436, 581, 241, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Türkiye (TR)'" FullSelectorArgument="&lt;webctrl id='fsc-origin-search' tag='INPUT' aaname='Kalk??' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fsc-origin-search' tag='INPUT' aaname='Kalk??' type='text' class='*' /&gt;" Guid="bff17a9a-a711-40dd-888c-1fe944f4c633" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPUAAAA0CAYAAABSBX50AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKBSURBVHhe7dYxbuNADIXhbfYKrrfPFVLlFjlc+rQ5QYBtgkWQLkWK1EGQMwjQggtTmBDkjGRLXg/9fwBhiUONXOhB+vHz1/VIUVSeItQUlay+hfrq5na8u38YH5+ex99/XiiK6rCmUEugpfHx+TUOwzAC6NMUanlDv76979sAejWFWj65eUMD/ZtCLZ/eAPpHqIFkCDWQDKEGkiHUQDKEGkiGUAPJEGogGUINJEOogWQINZAMoQaSIdRAMoQaSGbVUO92u2qVM/a4pTW3ZK9j6D30flG1ZpQ9B4616Zt6zYf1HB78WgC9fjRve9EccAhCPVMreN5adI3X9+aAQ5w01NGDW/b1WH619LxUWy/7JdvTuWi+dMh6tK/Xj2aBpc4y1Pa8/BV2Rsw51155rLxeqbYmvPVoz1ofONbZh1ppr7Wuaufe9SLqi9qa8NalF5Un6gNLnO3ntyX9sizbs3P2uFaeqK+8dbufPbdqa8Bc/z3U9kGPHuxyzl4jvOuieW+2pXWNt27vK2r7tO4BzNFVqEutcyE9rZI3K6K+qK0Jb116tu/1VNQHljh5qMuentuex/aXXNe6Vni9Um1NeOvRntFerXsAc5w01EIfdC3tqfK45PWjPUrljKVrtRl1yHq0r9ePZoGlNg31OVgrKFuHjkBjLSlDrQFZO4hr76e22heXKW2otwzgmrb6n7hc6T+/gUtDqIFkCDWQDKEGkiHUQDKEGkiGUAPJEGogGUINJEOogWQINZAMoQaSmUL9+PQ8DsOwbwPo1RTqu/uH8fXtfd8G0Ksp1Fc3t/8+wT8+v3hjAx2bQq3Blje2fIpLwCmK6q++hZqiqP6LUFNUqroe/wKmSjMpeqQa+gAAAABJRU5ErkJggg==" InformativeScreenshot="f0319c0ddccab6ba844c7c2c7952f5be.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArgument="Kalkis" CvType="Text" DesignTimeRectangle="436, 565, 241, 16" ElementType="Text" FriendlyName="'Kalkış'" FullSelectorArgument="&lt;webctrl id='fsc-origin-search-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fsc-origin-search-label' tag='LABEL' type='' class='BpkLabel_bpk-label__YjIxO App_form-label__ZjA3O' aaname='Kalkış' check:innerText='Kalkış' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPUAAAAUCAYAAABVqXtCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEOSURBVHhe7ddBSgNBEIVhN7mHe6+QlbfI4bJ36wkC2YiEXCMEzzDQocAKb8ouHZzWYZr/wQc1VZ3lW+Rh87gtAPpBqYHOUGqgM5Qa6AylBjpDqYHOjEptid8W3UV61xnAMtJSe/Reo290BrCMaqk98abRfTZbsr3H9wDa+FJqj+79prOlto+7+J3NANpIS2357mbxfe2N77I3egfQzqT/1J7spvt4j290Z4l7APOkpdZvj+4t+mbK7NG9xb8BzPdjqS06a+Jv4mzJ9h7fA2hjVOr/oqndAfzeoqWu3QDMs0ipAfwdSg10ZlTqp+dd2b+8lsPbqRzfzwBW6F5qK7QtLtePMgzD579eQsi6UsoNJrSzH91/c+wAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;kalkış yazıldı&quot;]" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Varış'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="684,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Text="[str_varıs + &quot;[k(Enter)]&quot;]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvTextArgument="Bursa (YEI)" CvType="Text" DesignTimeRectangle="718, 581, 241, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Bursa (YEI)'" FullSelectorArgument="&lt;webctrl id='fsc-destination-search' tag='INPUT' aaname='Var??' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fsc-destination-search' tag='INPUT' type='text' class='*' aaname='Varış' /&gt;" Guid="3ecd987e-24e0-4952-bd4e-c25d1b71a15c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPUAAAA0CAYAAABSBX50AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIESURBVHhe7dhBbttADAVQb3oFr3uQnL67LnomFwN0ggHB0VhOZFvsewATa0gKDqAfGL78+PlxU0rVKaFWqlhdfv3+c1NKnb9aoNvvy+2fdgGcl1BDMUINxQg1FCPUUIxQQzFCDcUINRQj1FCMUEMxQg3FCDUUI9RQjFBDMUINxQg1FCPUUMxhob5er2mdQX+fW+957PXXWXXjdezBdzo81NG7P8zxfc/+hjiTzY0e2YFHvCTU7/owZ+9tdjbKZqJ77gPf4eWhnj3Y2Uzfjb3svFv1R7P+eJ7dJzuLHt2DvV7+8Xv2UI/n8V79ddzN5rauo1lv3Mtmxv7MbGa1B3u9/Iuy7KwZz/fubtnaWfV6RWMvVhevu+wMvuJUH7+jfq9Zvxln7pmd2dpd3beZzaz2YK+nh7oZz2cP+mom6jurva17bfWaWb+d37Obzaz2YK9Th3q226360VavmfXb+T272cxqD/Z6i4/f2XU8y2RzW3uxH231mll/dd9mNrPag72e/kVZqyjrj3Pj62jcy+ZibzbXzM67rb1ZdfG6yc7gqw4L9Rk9O2QCzRGEOnhWsJ/9D4T/h1Anjg6bQHMkoYZihBqKEWooRqihGKGGYoQaihFqKEaooRihhmKEGooRaihGqKEYoYZihBqKEWoo5jPU7YdS6vz1Ger2QilVp4RaqVL1cfsLmtilq+3ynRMAAAAASUVORK5CYII=" InformativeScreenshot="607c1994cd3e8926fb916d4caa264631.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArgument="Varis" CvType="Text" DesignTimeRectangle="718, 565, 241, 16" ElementType="Text" FriendlyName="'Varış'" FullSelectorArgument="&lt;webctrl id='fsc-destination-search-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fsc-destination-search-label' tag='LABEL' type='' class='BpkLabel_bpk-label__YjIxO App_form-label__ZjA3O' aaname='Varış' check:innerText='Varış' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPUAAAAUCAYAAABVqXtCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVHhe7dhBDoJAEERRNt7Dg3h6dy48E6bVMmXTEBYDgcmv5AWmp7cVosPlehsB9INSA52h1EBnKDXQGUoNdIZSA535lVrxy6U5gGP6+1Ln8io+A3Bsq0udk3cUzZbuAWxnUuqIn+feI9V7tVu9A9jG5I8yFU/xeY7vO58pfg9gO6tKrfhOxPfd3CyS5wDaKkut5Fl11tNppvg8ojOA9ialDko182jue3mW43sA2itL3ZqnugfQzq6lru4AtLVLqQHsh1IDnRnuj+cI4Pyi0PEcvj933wdCyHnzKfVzfAEmnZZgBquwRgAAAABJRU5ErkJggg==" SearchSteps="Selector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;varış yazıldı&quot;]" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="kalkış tarihi click" sap:VirtualizedContainerService.HintSize="684,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvTextArgument="7.09.2023" CvType="Text" DesignTimeRectangle="960, 581, 131, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'7.09.2023'" FullSelectorArgument="&lt;webctrl id='depart-fsc-datepicker-button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='depart-fsc-datepicker-button' tag='BUTTON' type='*' aaname='??k?? tarihi' check:innerText='7.09.2023' /&gt;" Guid="99a645a3-4d8e-45f8-ace1-8774a22e4855" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIcAAAA0CAYAAACguSvRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGuSURBVHhe7d1BTgMxDEbhbrhC1xykp2fHgjMVjBQUGb8kU80gOnqfZNHanlQKv7rt5eX1dresqgyHhXV5e//4fhF/Lauvy/1LC4cUWhYMh34xHEKGQ8hwCBkOIcMhZDiEDIeQ4RAyHEKGQ8hwCBkOIcMhZDiEDIfQLuG4Xq9YZGVvZae3sr/Hzmx+Fod+c9DF5UutLnm11+RZtbvHTn4f8vuzOCwc1SWG1X61E7b083m0k/eyLfMzOTQcldFFzv4JYUs/eq1Pz4V+NjunMpo9s0PCMbrM1Ut+5Pls5bwwO7OaR6/VWR0WDrI6qy6+6pG8O3puNhvNw2z+rP5tOEK876v1Zvr9ZvQczapzyOreM9k9HLMLfXTWzHbo87d+bnVO1Wuo/8wOCccIXXDur+xkoznNqj7thtUzzuDPwxHyZVaXSz1S7Wd5p3qm6vXomTPaNRx0sXShfVVGO7nX7+XqjWYhz/tqqH82u39z6DwMh5DhEDIcQoZDyHAIGQ4hwyFkOIQMh5DhEDIcQoZDyHAIGQ4hwyFkOIQMh9BPOOJFC4dl9eWP8VhYhsOCut0/AdarEVJoLcB4AAAAAElFTkSuQmCC" InformativeScreenshot="dc2933ec7703782cc6d1ca547bb87e51.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArgument="7.09.2023" CvType="Text" DesignTimeRectangle="973, 595, 106, 20" ElementType="Text" FriendlyName="'7.09.2023'" FullSelectorArgument="&lt;webctrl parentid='depart-fsc-datepicker-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='depart-fsc-datepicker-button' tag='SPAN' type='' class='DateInput_DateInput--text__MzMyY' aaname='*' check:innerText='7.09.2023' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAYCAYAAAAbIMgnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEuSURBVGhD7ZZRCsMwDEN3it7/ph3+yDCaZDtlgxj8IB+RlBRHDPa6h5ZMcU2Z4poyxTVlimvKFNeUT3HXdcmlqOQqGU8l/4tM5p9O+otTQ+HA7AGq2gI9lv1FBvcG7k8nLI4NaFR1ljF2dLxPZTCH7PgdSItjRENmD2Ts6KYtXZ0zvJfdw4i8E5HFRYNWH+DJeaRyn5HdyXzT1upGWJyi6rFHYZoCs9G5zIt8I/NP46/FGbb3a2kZPr+IzimP3aOo5k6AFpcN+9RbZBn1/d3vsnuYtlD6icjiItTwqFcySOQrj+kqa1TvOJlHxRk4KBtcaQqWRzDDzjDNo8504qs4NbQa1i9GlEHN53B5Is9A36+F0rsg/5wMZzPFNWWKa8oU15QprilTXFOmuJbc9xuwWMh4ExY6HgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;kalkış tarihine tıklandı&quot;]" />
+                          <uix:NSelectItem DisplayName="Select Item 'Eylül 2023'" sap:VirtualizedContainerService.HintSize="684,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[sr_secilecekTarih]" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                            <uix:NSelectItem.Items>
+                              <scg:List x:TypeArguments="x:String" Capacity="13">
+                                <x:String>Ağustos 2023</x:String>
+                                <x:String>Eylül 2023</x:String>
+                                <x:String>Ekim 2023</x:String>
+                                <x:String>Kasım 2023</x:String>
+                                <x:String>Aralık 2023</x:String>
+                                <x:String>Ocak 2024</x:String>
+                                <x:String>Şubat 2024</x:String>
+                                <x:String>Mart 2024</x:String>
+                                <x:String>Nisan 2024</x:String>
+                                <x:String>Mayıs 2024</x:String>
+                                <x:String>Haziran 2024</x:String>
+                                <x:String>Temmuz 2024</x:String>
+                                <x:String>Ağustos 2024</x:String>
+                              </scg:List>
+                            </uix:NSelectItem.Items>
+                            <uix:NSelectItem.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvElementArea="908, 546, 235, 38" CvTextArea="917, 556, 72, 18" CvTextArgument="Eylul 2023" CvType="InputBox" DesignTimeRectangle="909, 547, 231, 36" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Eylül 2023'" FullSelectorArgument="&lt;webctrl id='depart-calendar__bpk_calendar_nav_select' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='depart-calendar__bpk_calendar_nav_select' tag='SELECT' type='' class='BpkSelect_bpk-select__YTA2O' aaname='' /&gt;" Guid="860e40cc-f0b6-4660-8b21-9a68f070ec8a" ImageBase64="" InformativeScreenshot="329da4862b086059e1c62e3878a7e1db.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                            </uix:NSelectItem.Target>
+                          </uix:NSelectItem>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '14'" sap:VirtualizedContainerService.HintSize="684,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvTextArgument="14" CvType="Text" DesignTimeRectangle="1007, 687, 36, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'14'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aria-label='{0}' tag='BUTTON' type='button' aaname='{1}' /&gt;&quot;, str_uzunTarih, str_secilecekGun)]" FuzzySelectorArgument="&lt;webctrl aria-label='14 Eylül 2023 Perşembe' tag='BUTTON' type='button' aaname='14' class='BpkCalendarDate_bpk-calendar-date__MzI1M bpk-calendar-date--null' check:text='14' /&gt;" Guid="3248cdb6-1fe0-4bcc-98e9-23aca06c251b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHASURBVFhH3ZeBbsMgDET3Ffn/P9zWNt2SNWW6aUYuPYNhIUI76aQ0BvwUMNCXMLj+L+Bt28LnsoTLfA2n8yW8vZ/C66/xjHeIoQ3atqoacFnXcJ7nCOM1+qBvrdyA6/r181VY8hpjDIzllQtwvn7QZH8xxvQoC7jd703T6TXGRo6cTEB03GNKS0aOHKQJ2PPLpUYuSxSwx5or2VqTT4CoMDbAEWbV/QR4xLqzjNypHgCxkbKORzrdzB8AjywMy2nBRECcl6xDztM0RbM4XIoz67M7AuJQZ40ta7gcQCnODBZRBMTNgzVm1klzABKz4pbBIoqANdWrE1oA8t6K56yrOQLq+1yNGYAGY/GSwSKKgKyhxwxAv2Nxj0W7A5Z+ey3adYrlOee0PzOd4tYjTifWIJbT/sy0SGq2Ge1S4howMd1majdqcQ9AulG3HHW9TI86aOjLAjT8dQtqreY9rKtX9AQ4/JUfGvpPk+jIgkkLQ8sEHP6PO4SOPb8kxs7BQVlAUY81aa25VC5ACBW2x5RjDFatltyAImykLdOOPukm7FE1oAjnJQ513DzwVfR9Es94hxja6LO1Vs2AR2lwwBC+AfNAf7KzxHOHAAAAAElFTkSuQmCC" InformativeScreenshot="f890c0c7ae420e96e9d6e0e04febd7e9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[str_uzunTarih + &quot; için seçim yapıldı&quot;]" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '3 yolcu sayısı, Ekonomi'" sap:VirtualizedContainerService.HintSize="684,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvElementArea="1221, 535, 264, 49" CvTextArea="1237, 552, 161, 17" CvTextArgument="3 yolcu sayisi, Ekonomi" CvType="InputBox" DesignTimeRectangle="1222, 536, 262, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'3 yolcu sayısı, Ekonomi'" FullSelectorArgument="&lt;webctrl id='CabinClassTravellersSelector_fsc-class-travellers-trigger*' tag='BUTTON' aaname='*, *' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CabinClassTravellersSelector_fsc-class-travellers-trigger*' tag='BUTTON' aaname='*, *' type='button' class='CabinClassTravellersSelector_CabinClassTravellersSelector__class-travellers-trigger__ZjQ0N App_fsc-select__NmNjN App_fsc-select-large-above-tablet__MWFkO App_fsc-select-docked-last-above-tablet__MTUxY' check:text='3 yolcu sayısı, Ekonomi' /&gt;" Guid="6577c8e9-f0ac-4180-b93e-e503faa30acc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQoAAAA0CAYAAAByzHagAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOpSURBVHhe7dg7TlxRDIBhmmyBOnugZQN0LIA9wD7YBFQUVDwaCEV4NCnS0CAl3UQi2cUNRpgYyz6+Gc1Jhrn/J1kzx8c+yX3EGmXtw8fNgSAIohUMCoIgyli7+fJ1kDi9vH7+JAhiunF+dTscHp8PWzt7bwfF8EKKAGD2+Gs4ufj8NCx2GRQAcvcP34aDp18WDAoATWefbhgUANpkJjAoADQxKACUGBQASgwKACUGBYASgwJAiUEBoMSgAFBiUAAoMSgAlBgUAEoMCgAlBgWAUvdBsb6+/iZ66n3+e+afgw1lv783/lqwWF0HRfTwej5MXpRc9Cw87h8y3QeF1/Nl5EXPyb2p7g/3D5mugyKSvYzZi+xzWhfV+7Watydjz4rqsn2/VprL9mxYUX0m6vei86M+m4/29DOrUa0aXUf7WW5KZrPZsL+/H8bd3d1L1eL8k0ERPdiI37c9Ub/PVfui6lFj89F51dqy+9GeZWuF32/xvRF/tq8fk+tVo2ufU/b7FGxvb7+5JzY2NjZeqhZnaX5RCL9n11mf5HWv1W/Z/JgaK8u3tP68sXuRat+S2iyUfvd5FeWErY96fc7vK1vne0Rr7fdW3dHR0es98vFuf1F4cjERvVCVfbdsj6/JeqzWuRHJa2Rsja+N1sp+F1rr8yrLR1rnKK3JarN+W9+qUfOe43N2HdWvumhY9BgSotug0L94JMsL3fP9rbNsj5X1WFGNPbNF62xt1Odzuh7Tq7R2bL3neyO2JqrP+n1fxObnPcfn7DqqnwL5Pwm5doleQ0J0/UURPTy9qIzu+5qsx9b+TY+KaiQ3pleNOc+StYZVrYXNRfsZqa3q/X61VvbsVo2a9xyfs+uofirkl4X852ZP3QdF6+Fmsr4qN29PtLY5K6tXvs/vqyhf9UbrsXxvxO/7nuiMqCbia3ydz/l9EfWoqB6L03VQCHmANsZo1dqzfM08PSLaj+pUVG/5vaguy3laN6Y+qlG6F4Wy35WvEZrL9iJR3p7h97N6y66jeixO90Exjyk89F7XyD8Y9LA0g0JfcPlc1Ze99zWu8r3D/7VUg2LVX/QpXCNW09IMCgDLi0EBoMSgAFBiUAAoMSgAlBgUAEoMCgAlBgWAEoMCQIlBAaDEoABQYlAAKDEoAJTOrm4YFABy9w/fh8PjcwYFgNiPx5/DycX1sLWz92dQyICQOL28fv4kCGK6cX51Oxw8/ZLY2tl9HRLPg8IuCIIgomBQEARRxObwG3fJzUyepUu7AAAAAElFTkSuQmCC" InformativeScreenshot="864fd0975a80047f74336bd6d29faa51.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;kabin sınıfı butonuna tıklandı&quot;]" />
+                          <uix:NGetText DisplayName="Get Text '1'" sap:VirtualizedContainerService.HintSize="684,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" TextString="[str_sitedekiKisiSayisi]" Version="V3">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvType="AnyWordGroup" DesignTimeRectangle="1221, 812, 40, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl id='search-controls-adults-nudger' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-controls-adults-nudger' tag='INPUT' type='text' class='BpkNudger_bpk-nudger__input__ZTM3N BpkNudger_bpk-nudger__input--numeric__NzJhN' aaname='' /&gt;" Guid="9a400061-c096-432d-8c59-496d04bf25f3" ImageBase64="" InformativeScreenshot="acafac1a0a0ff848dbd4bc5366717280.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;seçili kişi sayısı şu an &quot; + str_sitedekiKisiSayisi]" />
+                          <If Condition="[CInt(str_sitedekiKisiSayisi) = CInt(str_kisi)]" sap:VirtualizedContainerService.HintSize="684,1940" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="377.6,233.6" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;deger esittir&quot;]" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap:VirtualizedContainerService.HintSize="650.4,1523.2" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:IfElseIf DisplayName="sitedeki kişi sayısı exceldeki kişi  sayısından büyük mü" sap:VirtualizedContainerService.HintSize="607.2,1433.6" sap2010:WorkflowViewState.IdRef="IfElseIf_6">
+                                  <ui:IfElseIf.ConditionBlocks>
+                                    <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                      <ui:IfElseIfBlock BlockType="If" Condition="[CInt(str_sitedekiKisiSayisi) &gt; CInt(str_kisi)]">
+                                        <ui:IfElseIfBlock.Then>
+                                          <Sequence DisplayName="- ye bascak" sap:VirtualizedContainerService.HintSize="556.8,1036.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="494.4,924.8" sap2010:WorkflowViewState.IdRef="DoWhile_1">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <DoWhile.Condition>[not str_sitedekiKisiSayisi = str_kisi]</DoWhile.Condition>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="449.6,781.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvType="Button" DesignTimeRectangle="1185, 773, 36, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl parentid='cabin-class-travellers-popover' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='cabin-class-travellers-popover' tag='BUTTON' type='button' class='BpkButtonBase_bpk-button__YjgwZ BpkButtonBase_bpk-button--icon-only__NjMyZ BpkButtonSecondary_bpk-button--secondary__YzRlO BpkNudger_bpk-nudger__button__ODBmY' aaname='Yeti?kin say?s?n? azalt?n' /&gt;" Guid="77c2ce28-9d60-4595-93bf-6620323e151c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVFhH7ZhBCsIwEEW9/3UEFUREFPQYghQpFt3aVeQvfmjjROhAzCjz4O1M8hzSRTsLxvndwGffh+7+CM21DedLU0TsjTNwVg4xEIukDUuKMyXeAttbJ27wDXF2yiiwxuRS00nGQNwDaUENh3cyBlqYHh1OMQaWfFqnihYSA6Uf1pR4oFbigVqJB2olHqiV/GfgdrcP88Vykqv1RtwrJ1EFHo4nMeKT+FPSXjmJ30GtxAO1Eg/USjxQK/FArSQGmn/tNP/ibv7TB7AwxeH0wCgQmP78RmpMMp0cEQMB7gEWlXy6sTfOGN65lGygFYwHhvACsIs9406hULIAAAAASUVORK5CYII=" InformativeScreenshot="521e29bfd67cc9322d9b5339a126bc8c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                  </uix:NClick.Target>
+                                                </uix:NClick>
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;azalt butonuna basıldı&quot;]" />
+                                                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                                <uix:NGetText DisplayName="Get Text '1'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" TextString="[str_sitedekiKisiSayisi]" Version="V3">
+                                                  <uix:NGetText.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvType="AnyWordGroup" DesignTimeRectangle="1221, 812, 40, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl id='search-controls-adults-nudger' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-controls-adults-nudger' tag='INPUT' type='text' class='BpkNudger_bpk-nudger__input__ZTM3N BpkNudger_bpk-nudger__input--numeric__NzJhN' aaname='' /&gt;" Guid="9a400061-c096-432d-8c59-496d04bf25f3" ImageBase64="" InformativeScreenshot="acafac1a0a0ff848dbd4bc5366717280.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                  </uix:NGetText.Target>
+                                                </uix:NGetText>
+                                              </Sequence>
+                                            </DoWhile>
+                                          </Sequence>
+                                        </ui:IfElseIfBlock.Then>
+                                      </ui:IfElseIfBlock>
+                                      <ui:IfElseIfBlock BlockType="Else">
+                                        <ui:IfElseIfBlock.Then>
+                                          <Sequence DisplayName="+ ya basar" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="DoWhile_2">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <DoWhile.Condition>[not str_sitedekiKisiSayisi = str_kisi]</DoWhile.Condition>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="449.6,781.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvTextArgument="+" CvType="Text" DesignTimeRectangle="1261, 673, 36, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl aaname='Yetişkin sayısını artırın' parentid='cabin-class-travellers-popover' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yetişkin sayısını artırın' parentid='cabin-class-travellers-popover' tag='BUTTON' type='button' class='BpkButtonBase_bpk-button__YjgwZ BpkButtonBase_bpk-button--icon-only__NjMyZ BpkButtonSecondary_bpk-button--secondary__YzRlO BpkNudger_bpk-nudger__button__ODBmY' /&gt;" Guid="c08232bf-2944-4ca6-bb5e-051c470f5660" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVFhH7ZhBCsIwEEU9Ra9Rj2GvoR5ckCLFolu7inzhhzROxITGjDQP/qpm5jlkFu3GKOd/BR/TZMbb3fSXwZzOfZagNnqgVwhREIekgjmDnhJvgsN1FAv8IujtMxMsMTk//iStIO6BdKBE3DtpBTVMj3GnaAVzbmts4EKsoPTDkiFVMDVkXYK7rjNtuxWfxYYsKtg0zSvSs9iQKpgaUgVTQ5IEsa2U+Tax202SBPeHoyjxKfhTUq1QSL2DqSFVMDVkXYLY7thtDYUsKrhkSBVMDfkfQfWvnepf3NV/+gAapuhOD8wEgerPb6TEJP3JEVEQ4B7gUM7tRm30cO+cT1BQC8oFjXkCSw7UOeiKMsAAAAAASUVORK5CYII=" InformativeScreenshot="9d30367d4c9cc5b79bfd3747a9deaba2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='En Ucuz Uçak Biletleri ve Rezervasyon Teklifleri | Skyscanner' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target CvTextArgument="Kabin sinifi" CvType="Text" DesignTimeRectangle="1185, 503, 335, 34" ElementType="Text" FriendlyName="'Kabin sınıfı'" FullSelectorArgument="&lt;webctrl parentid='cabin-class-travellers-popover' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='cabin-class-travellers-popover' tag='LABEL' type='' class='BpkLabel_bpk-label__YjIxO CabinClassTravellersSelector_CabinClassTravellersSelector__traveller-label__ZGQ0Y' aaname='Kabin sınıfı' check:innerText='Kabin sınıfı' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVMAAAAmCAYAAAB503iyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHgSURBVHhe7dhBaltRDAXQrsL7X2PTUFIwLi9FVBH6/s63SJr6HLiDJ8nGmdxBvl0AuJsyBRigTAEGKFOAAcoUYIAyBRigTAEGKFOAAcoUYIAyBRigTAEGKFOAAcoUYIAyBRigTAEGKFOAAW/K9HQ6vabaml9zy2eOfO9nid/6lX4z8HF2y/RoedzyuaPf/Rnit36l3wx8nKtlek9x3PPZf9H/9vcAszbLdK88Yr91V/eRrM7yXc6ea/d1lu9ysjzLNzl5B9CWaU6nu1vJun0kbL27bOluV8LWu0vI77zPyTuAu8o0q7NrNzGvN/W9dLOs7t/7Xo7cLN0MeEyH/2cau5pQ3yHP6019L90si/3WXZ13d0dulm4GPKabyrQWRp7XhPoOeV5v6nvpZp24q/d77+XIzdLNgMd0tUyXrVlV77Y+l+f1pr6XbhZil/fvfS9HbpZuBjym3TJd6jzeXUK3i4S999LNstjXhL33cuRm6WbAY3pXmeZdnV3b52R1dstNJ2662zqbulm6GfCY3pQpAMcoU4AByhRggDIFGKBMAQYoU4AByhRggDIFGKBMAQa0Zfry8uvy/OPn5enp+fL0XUREVh+uXlz92HlTpufz+U+Jdl8kIiKvWT25+vKvy+U3gllsUDMKLSgAAAAASUVORK5CYII=" SearchSteps="Selector" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uix:NClick>
+                                                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                                <uix:NGetText DisplayName="Get Text '4'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" TextString="[str_sitedekiKisiSayisi]" Version="V3">
+                                                  <uix:NGetText.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvType="AnyWordGroup" DesignTimeRectangle="1221, 607, 40, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'4'" FullSelectorArgument="&lt;webctrl id='search-controls-adults-nudger' tag='INPUT' class='BpkNudger_bpk-nudger__input__ZTM3N BpkNudger_bpk-nudger__input--numeric*' parentid='cabin-class-travellers-popover' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-controls-adults-nudger' tag='INPUT' class='BpkNudger_bpk-nudger__input__ZTM3N BpkNudger_bpk-nudger__input--numeric*' parentid='cabin-class-travellers-popover' type='text' aaname='' /&gt;" Guid="9a400061-c096-432d-8c59-496d04bf25f3" ImageBase64="" InformativeScreenshot="1617f82b2be1ddc4b85f837ea3a66a5d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                  </uix:NGetText.Target>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uix:NGetText>
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;artır butonuna basıldı&quot;]" />
+                                              </Sequence>
+                                            </DoWhile>
+                                          </Sequence>
+                                        </ui:IfElseIfBlock.Then>
+                                      </ui:IfElseIfBlock>
+                                    </sc:BindingList>
+                                  </ui:IfElseIf.ConditionBlocks>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:IfElseIf>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="684,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+                                  <ui:IfElseIf.ConditionBlocks>
+                                    <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                      <ui:IfElseIfBlock BlockType="If" Condition="[CInt(str_sitedekiKisiSayisi) &gt; CInt(str_kisi)]">
+                                        <ui:IfElseIfBlock.Then>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,104.8" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </ui:IfElseIfBlock.Then>
+                                      </ui:IfElseIfBlock>
+                                      <ui:IfElseIfBlock BlockType="ElseIf">
+                                        <ui:IfElseIfBlock.Then>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,104.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </ui:IfElseIfBlock.Then>
+                                      </ui:IfElseIfBlock>
+                                      <ui:IfElseIfBlock BlockType="Else">
+                                        <ui:IfElseIfBlock.Then>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,104.8" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </ui:IfElseIfBlock.Then>
+                                      </ui:IfElseIfBlock>
+                                    </sc:BindingList>
+                                  </ui:IfElseIf.ConditionBlocks>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:IfElseIf>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Tamamlandı'" sap:VirtualizedContainerService.HintSize="684,157.6" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvTextArgument="Tamamlandi" CvType="Text" DesignTimeRectangle="1439, 876, 81, 21" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Tamamlandı'" FullSelectorArgument="&lt;webctrl aaname='Tamamlandı' parentid='cabin-class-travellers-popover' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Tamamlandı' parentid='cabin-class-travellers-popover' tag='BUTTON' type='button' class='BpkLink_bpk-link__Zjc0O' check:innerText='Tamamlandı' /&gt;" Guid="e9dc0665-dd75-4b46-b572-c1d081a62107" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAZCAYAAABAb2JNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAESSURBVGhD7ZThCgIxDIN9Vl/dBznpj0gIXXfuVvEgHwybNqsSvHscZjsOtQGH2oBDbcChNuBQG/iE+ni+yvPv/PI3zr5r+E+9Q5CMQ23gtqFGjw8Dnc2zXsD9bIZPnY96Cvt0Dl15gmzOPq7B6VB5aXBWaw9kszNae4DrIPNWOlj1KJcef12ud2ZaubJPZxnqz/apJ2PmufT4s4droL1M6wFcA+2d8esBXDM7PF89/sp0ebGje9/sfjYPdngcqrDDsxxq6OnyYkc2q+ZBdgdUsyB05QfqUZ/2dB4sv1NZo1a0l2kc1qgV7bEe+XFYo87QPu7goAe4BsNQzToOtQGH2oBDbcChNuBQG3CoDTjU7RzHG/0Lh5ZQIEU5AAAAAElFTkSuQmCC" InformativeScreenshot="64b0e87cb40406daf18cb8e7f512c798.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Skyscanner*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;tamamlandı butonuna basıldı&quot;]" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ara'" sap:VirtualizedContainerService.HintSize="684,157.6" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.skyscanner.com.tr/ucak-bileti" CvElementArea="1396, 605, 90, 53" CvTextArea="1412, 624, 28, 14" CvTextArgument="Ara" CvType="Button" DesignTimeRectangle="1398, 608, 86, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Ara'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='BpkButtonBase_bpk-button__YjgwZ BpkButtonBase_bpk-button--large__MGFjO BpkButtonFeatured_bpk-button--featured__MTBkM App_submit-button__NGFhZ App_submit-button-oneline__MmU3N' aaname='Ara ' check:innerText='Ara' /&gt;" Guid="385a4683-cd97-4a71-b297-3d2128e16c5b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAA0CAYAAAAKVi8oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVHhe7ZsxTgMxEEUTBPfIDbhAelpKWnIIrsMpqGmoOAEdSBQUtBRIFCY/wtFkdszCrv0XtP9LT8p6xlu8WJaL9eJktU6iPRJNoij6+HSTjs6u0/LiPi0un9Ji8ywitm7gCK7gLHIJQtGYFL5U9AJ3kdOO6OX5TfgC8XPg0Hs9EK2VXA+/sveisb9EE8Rw7J69F63VXB+7qveid6eLoFkMB047onWEa8DWaVd01ChGI9EkJJqERJOQaBISTUKiSUg0iVmKvn14T4+vH2l19RLWWzBb0QhTdnPROVFtKiAXkhGWbJpoJKpPBVt2U9E+Uc+UMGVTROffpbpPqW7n1oIlu5nonNKzHfPpq9WGIftPiLZj39Vy7FiJfLIYEsiO3jmG5qKj+B47z1JK1Ou5vnv76v598CdF7xxDE9F98X12rq9FifrHgK3Cnq2jnrE0Fd03nmN7bC0aQ/z4GBiSAVW0r+X4HluLEvUPgSUZVBedE9VAjv8dYWOffd8QmJJBddH/AbZkMEvRbMlglqJx9GNKBrMUPQUSTUKiSUg0CYkmIdEkJJqERJPoitaH6PWJPkTX1Yr6hFcrdFmoPuFlIV1/q094/Q1oVdfDrmZwIBroivJ4eq8oZ7Syh+NXciYUDbC/YNLuNKKjX5mtGziCK7sne4qiRV0kmsI6fQK47Ih172bttwAAAABJRU5ErkJggg==" InformativeScreenshot="302346301b8da46975b9d201260460a5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='En Ucuz Uçak Biletleri ve Rezervasyon Teklifleri | Skyscanner' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;ara butonuna basıldı&quot;]" />
+                        </Sequence>
+                        <Sequence DisplayName="arama sonrası işlemler" sap:VirtualizedContainerService.HintSize="898.4,2498.4" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="836,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1016,411" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="954,300" sap2010:WorkflowViewState.IdRef="NCheckState_2" Version="V3">
+                                  <uix:NCheckState.IfExists>
+                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </uix:NCheckState.IfExists>
+                                  <uix:NCheckState.IfNotExists>
+                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </uix:NCheckState.IfNotExists>
+                                </uix:NCheckState>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' Name='firma' ReferenceName='Column0'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='kalkış saati' ReferenceName='Column1'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='varış saati' ReferenceName='Column2'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='uçuş süresi' ReferenceName='Column4'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='fiyat' ReferenceName='Column3'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' Name='Url' ReferenceName='Column7'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='alt' name2='Column7' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="836,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="4b7ccdfb-8f43-4090-9632-ed303f38eb78" Timeout="15" Version="V3">
+                            <uix:NExtractData.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="504, 494, 680, 1444" DesignTimeScaleFactor="1" FriendlyName="'En iyi'" FullSelectorArgument="&lt;webctrl class='FlightsResults_dayViewItems__ZDFlO' parentid='app-root' tag='DIV' /&gt;" Guid="4e51e85b-d84a-4948-881a-40c74ecbeb35" InformativeScreenshot="0c20e52ffaab5f5dab56c7e0a614d04b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Skyscanner&amp;apos;dan İstanbul çıkışlı, New York varışlı düşük fiyatlı uçuşlar' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                            </uix:NExtractData.Target>
+                          </uix:NExtractData>
+                          <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="836,1973.6" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+                            <ui:IfElseIf.ConditionBlocks>
+                              <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                <ui:IfElseIfBlock BlockType="If" Condition="[ExtractDataTable.RowCount &lt;= 1]">
+                                  <ui:IfElseIfBlock.Then>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="545.6,514.4" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="483.2,309.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\Ogulcan\Desktop\uiPath\raporExceli.xlsx">
+                                        <ui:ExcelApplicationScope.Body>
+                                          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,200" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:ExcelWriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="[str_kalkis+&quot; ve &quot;+str_varıs]">
+                                                <ui:ExcelWriteRange.StartingCell>
+                                                  <InArgument x:TypeArguments="x:String">
+                                                    <Literal x:TypeArguments="x:String" Value="" />
+                                                  </InArgument>
+                                                </ui:ExcelWriteRange.StartingCell>
+                                              </ui:ExcelWriteRange>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ui:ExcelApplicationScope.Body>
+                                      </ui:ExcelApplicationScope>
+                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                                        <ui:CommentOut.Body>
+                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+                                              <ueab:ExcelProcessScopeX.Body>
+                                                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,976" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:BuildDataTable DataTable="[ExtractDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="530,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;açıklama&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;      &lt;xs:unique name=&quot;Constraint1&quot;&gt;&#xA;        &lt;xs:selector xpath=&quot;.//TableName&quot; /&gt;&#xA;        &lt;xs:field xpath=&quot;açıklama&quot; /&gt;&#xA;      &lt;/xs:unique&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;açıklama&gt;bulunan kriterlere uygunu bulunamamıştır&lt;/açıklama&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+                                                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,765" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="C:\Users\Ogulcan\Desktop\uiPath\raporExceli.xlsx">
+                                                      <ueab:ExcelApplicationCard.Body>
+                                                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                          <ActivityAction.Argument>
+                                                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                          </ActivityAction.Argument>
+                                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,496" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                            <Sequence.Variables>
+                                                              <Variable x:TypeArguments="ue:ISheetRef" Name="sheet" />
+                                                            </Sequence.Variables>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <ueab:InsertSheetX DisplayName="Insert Sheet" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="InsertSheetX_1" Name="[str_kalkis+&quot; ve &quot;+str_varıs]" ReferenceNewSheetAs="[sheet]" Workbook="[Excel]" />
+                                                            <ueab:WriteRangeX Destination="[sheet]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[ExtractDataTable]" />
+                                                          </Sequence>
+                                                        </ActivityAction>
+                                                      </ueab:ExcelApplicationCard.Body>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </ueab:ExcelApplicationCard>
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </ueab:ExcelProcessScopeX.Body>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ueab:ExcelProcessScopeX>
+                                          </Sequence>
+                                        </ui:CommentOut.Body>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:CommentOut>
+                                    </Sequence>
+                                  </ui:IfElseIfBlock.Then>
+                                </ui:IfElseIfBlock>
+                                <ui:IfElseIfBlock BlockType="Else">
+                                  <ui:IfElseIfBlock.Then>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="688,1227.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="625.6,1115.2" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+                                        <ueab:ExcelProcessScopeX.Body>
+                                          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1028.8" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="529.6,916.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="C:\Users\Ogulcan\Desktop\uiPath\raporExceli.xlsx">
+                                                <ueab:ExcelApplicationCard.Body>
+                                                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,647.2" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                      <Sequence.Variables>
+                                                        <Variable x:TypeArguments="ue:ISheetRef" Name="sheet" />
+                                                      </Sequence.Variables>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'düğme  Kapat'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                        <ui:Click.CursorPosition>
+                                                          <ui:CursorPosition Position="Center">
+                                                            <ui:CursorPosition.OffsetX>
+                                                              <InArgument x:TypeArguments="x:Int32" />
+                                                            </ui:CursorPosition.OffsetX>
+                                                            <ui:CursorPosition.OffsetY>
+                                                              <InArgument x:TypeArguments="x:Int32" />
+                                                            </ui:CursorPosition.OffsetY>
+                                                          </ui:CursorPosition>
+                                                        </ui:Click.CursorPosition>
+                                                        <ui:Click.Target>
+                                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7bedbe54-9629-4b5b-ad4f-92d7adfa74f6" InformativeScreenshot="ada8fb763fd065df797f6a32b17bff12" Selector="&lt;wnd app='excel.exe' cls='NUIDialog' title='*' /&gt;&lt;uia automationid='Close' name='Kapat' role='d??me' /&gt;">
+                                                            <ui:Target.TimeoutMS>
+                                                              <InArgument x:TypeArguments="x:Int32" />
+                                                            </ui:Target.TimeoutMS>
+                                                            <ui:Target.WaitForReady>
+                                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                            </ui:Target.WaitForReady>
+                                                          </ui:Target>
+                                                        </ui:Click.Target>
+                                                      </ui:Click>
+                                                      <ueab:InsertSheetX DisplayName="Insert Sheet" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="InsertSheetX_2" Name="[str_kalkis+&quot; ve &quot;+str_varıs]" ReferenceNewSheetAs="[sheet]" Workbook="[Excel]" />
+                                                      <ueab:WriteRangeX Destination="[sheet]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[ExtractDataTable]" />
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </ueab:ExcelApplicationCard.Body>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ueab:ExcelApplicationCard>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ueab:ExcelProcessScopeX.Body>
+                                      </ueab:ExcelProcessScopeX>
+                                    </Sequence>
+                                  </ui:IfElseIfBlock.Then>
+                                </ui:IfElseIfBlock>
+                              </sc:BindingList>
+                            </ui:IfElseIf.ConditionBlocks>
+                          </ui:IfElseIf>
+                          <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="836,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.skyscanner.com.tr/ucak-bileti" Version="V3" />
+                        </Sequence>
+                      </Sequence>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF7SURBVDhPrVM9S8NQFH2FkhYVf4Cb/0F0dPYnuIggShXb2lYEJ3FxqB8UBCcL4u4kIoqKi624OLi3TVMlcai0RsXpeM9Lqq1asWjgwMm559zc3JeocMIqhBNONRy3OoOXKahQ3HRDCw8IpZzOwEzMdDlBVQtzVmeQDCf5toEhEB1qpqxBTq3Z07aBEZdgxERguoyhVVuDnBprPzYIRMvona8gm3dhRC1snj9qkFNjjZ62DbqT8vTxEvZvXpCR4MpRTYOcGmv0fGlgyI2SMXevnrBz6WJQxs5euBhI2xrk1Fijh15mWiYIymh9i7fYzrlIn9ShRotQYyUPwqmxRg+9ra+QdNAlm+5fusPI1j2WD2vYOKtj/dQDOTXW6KGXmfcGgVkbwxkH+eIr9q6fsXZcw4G8c+Mip8YaPfQy87ED6daTqnhLnDKhJmTsSVMbCXKtSY0eeplp2QHPOBjzN+xDRXj+/rH5oEd/D5+X2Gz6FRoN/uNn+sPvbBXeAFBBfo2ZYd31AAAAAElFTkSuQmCC" InformativeScreenshot="c2ccce460f1443df2b18b1a81f82ba45.jpg" Selector="&lt;html app='chrome.exe' title='En Ucuz Uçak Biletleri ve Rezervasyon Teklifleri | Skyscanner' /&gt;" Title="En Ucuz Uçak Biletleri ve Rezervasyon Teklifleri | Skyscanner" Url="https://www.skyscanner.com.tr/ucak-bileti" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1196,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;islem bitirildi&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>
